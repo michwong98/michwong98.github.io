@@ -22,7 +22,7 @@ function baseTypeChange() {
 	var item_type = item_type_field.value;
 
 	var xhr1 = new XMLHttpRequest();
-	xhr1.open("GET", "./src/JSON/" + item_type + ".json", true);
+	xhr1.open("GET", "./JSON/" + item_type + ".json", true);
 	xhr1.onreadystatechange = function() {
 		if (xhr1.readyState == 4 && xhr1.status == "200") {
 			var base_types = JSON.parse(xhr1.responseText).bases;
@@ -32,7 +32,7 @@ function baseTypeChange() {
 	xhr1.send(null);
 
 	var xhr2 = new XMLHttpRequest();
-	xhr2.open("GET", "./src/JSON/" + item_type + "-affixes.json", true);
+	xhr2.open("GET", "./JSON/" + item_type + "-affixes.json", true);
 	xhr2.onreadystatechange = function() {
 		if (xhr2.readyState == 4 && xhr2.status == "200") {
 			affixes = JSON.parse(xhr2.responseText);
