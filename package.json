@@ -1,0 +1,19 @@
+{
+  "name": "github-io",
+  "version": "0.0.1",
+  "description": "Github Pages for Michwong98",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michwong98/michwong98.github.io.git"
+  },
+  "author": "michwong98",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michwong98/michwong98.github.io/issues"
+  },
+  "homepage": "https://github.com/michwong98/michwong98.github.io#readme"
+}
