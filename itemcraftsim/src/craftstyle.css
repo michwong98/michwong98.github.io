@@ -1,0 +1,48 @@
+body {
+	background: black;
+	height: 100%;
+	width: 100%;
+}
+
+.core {
+	background: #333333;
+	border-radius: 25px;
+	display: block;
+	width: 60%;
+	height: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	color:white;
+}
+
+.title {
+	width: 90%;
+	text-align: center;
+	display: block;
+	margin: auto;
+	padding: 20px;
+	border-bottom-color: black;
+	border-bottom-width: 5px;
+	border-bottom-style: solid;
+
+}
+
+.h1 {
+	font-size: 4em;
+}
+
+form {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+select {
+	width: 30%;
+	font-size:1em;
+}
+
+#item-level {
+	width: 10%;
+}

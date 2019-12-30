@@ -1,0 +1,281 @@
+{
+  "name": "one-hand-sword",
+  "bases": [
+    {
+      "item-name": "Rusted Sword",
+      "level-requirement": 1,
+      "s-requirement": 8,
+      "d-requirement": 8,
+      "damage": [
+        4,
+        9
+      ],
+      "APS": 1.55,
+      "Crit": 5
+    },
+    {
+      "item-name": "Copper Sword",
+      "level-requirement": 5,
+      "s-requirement": 14,
+      "d-requirement": 14,
+      "damage": [
+        6,
+        14
+      ],
+      "APS": 1.5,
+      "Crit": 5
+    },
+    {
+      "item-name": "Sabre",
+      "level-requirement": 10,
+      "s-requirement": 18,
+      "d-requirement": 26,
+      "damage": [
+        5,
+        22
+      ],
+      "APS": 1.55,
+      "Crit": 5
+    },
+    {
+      "item-name": "Broad Sword",
+      "level-requirement": 15,
+      "s-requirement": 30,
+      "d-requirement": 30,
+      "damage": [
+        15,
+        21
+      ],
+      "APS": 1.45,
+      "Crit": 5
+    },
+    {
+      "item-name": "War Sword",
+      "level-requirement": 20,
+      "s-requirement": 41,
+      "d-requirement": 35,
+      "damage": [
+        16,
+        30
+      ],
+      "APS": 1.4,
+      "Crit": 5
+    },
+    {
+      "item-name": "Ancient Sword",
+      "level-requirement": 24,
+      "s-requirement": 44,
+      "d-requirement": 44,
+      "damage": [
+        18,
+        33
+      ],
+      "APS": 1.45,
+      "Crit": 5
+    },
+    {
+      "item-name": "Elegant Sword",
+      "level-requirement": 28,
+      "s-requirement": 46,
+      "d-requirement": 55,
+      "damage": [
+        20,
+        33
+      ],
+      "APS": 1.5,
+      "Crit": 5
+    },
+    {
+      "item-name": "Dusk Blade",
+      "level-requirement": 32,
+      "s-requirement": 57,
+      "d-requirement": 57,
+      "damage": [
+        19,
+        54
+      ],
+      "APS": 1.3,
+      "Crit": 5
+    },
+    {
+      "item-name": "Hook Sword",
+      "level-requirement": 34,
+      "s-requirement": 64,
+      "d-requirement": 64,
+      "damage": [
+        28,
+        60
+      ],
+      "APS": 1.15,
+      "Crit": 5
+    },
+    {
+      "item-name": "Variscite Blade",
+      "level-requirement": 35,
+      "s-requirement": 62,
+      "d-requirement": 62,
+      "damage": [
+        25,
+        53
+      ],
+      "APS": 1.3,
+      "Crit": 5
+    },
+    {
+      "item-name": "Cutlass",
+      "level-requirement": 38,
+      "s-requirement": 55,
+      "d-requirement": 79,
+      "damage": [
+        13,
+        53
+      ],
+      "APS": 1.55,
+      "Crit": 5
+    },
+    {
+      "item-name": "Baselard",
+      "level-requirement": 41,
+      "s-requirement": 72,
+      "d-requirement": 72,
+      "damage": [
+        37,
+        53
+      ],
+      "APS": 1.3,
+      "Crit": 5
+    },
+    {
+      "item-name": "Battle Sword",
+      "level-requirement": 44,
+      "s-requirement": 83,
+      "d-requirement": 70,
+      "damage": [
+        36,
+        66
+      ],
+      "APS": 1.3,
+      "Crit": 5
+    },
+    {
+      "item-name": "Graceful Sword",
+      "level-requirement": 50,
+      "s-requirement": 78,
+      "d-requirement": 94,
+      "damage": [
+        34,
+        55
+      ],
+      "APS": 1.5,
+      "Crit": 5
+    },
+    {
+      "item-name": "Twilight Blade",
+      "level-requirement": 53,
+      "s-requirement": 91,
+      "d-requirement": 91,
+      "damage": [
+        30,
+        86
+      ],
+      "APS": 1.3,
+      "Crit": 5
+    },
+    {
+      "item-name": "Grappler",
+      "level-requirement": 55,
+      "s-requirement": 99,
+      "d-requirement": 99,
+      "damage": [
+        44,
+        94
+      ],
+      "APS": 1.15,
+      "Crit": 5
+    },
+    {
+      "item-name": "Gemstone Sword",
+      "level-requirement": 56,
+      "s-requirement": 96,
+      "d-requirement": 96,
+      "damage": [
+        39,
+        83
+      ],
+      "APS": 1.3,
+      "Crit": 5
+    },
+    {
+      "item-name": "Corsair Sword",
+      "level-requirement": 58,
+      "s-requirement": 81,
+      "d-requirement": 117,
+      "damage": [
+        20,
+        80
+      ],
+      "APS": 1.55,
+      "Crit": 5
+    },
+    {
+      "item-name": "Legion Sword",
+      "level-requirement": 62,
+      "s-requirement": 122,
+      "d-requirement": 104,
+      "damage": [
+        53,
+        98
+      ],
+      "APS": 1.2,
+      "Crit": 5
+    },
+    {
+      "item-name": "Vaal Blade",
+      "level-requirement": 64,
+      "s-requirement": 113,
+      "d-requirement": 113,
+      "damage": [
+        48,
+        86
+      ],
+      "APS": 1.3,
+      "Crit": 5
+    },
+    {
+      "item-name": "Eternal Sword",
+      "level-requirement": 66,
+      "s-requirement": 104,
+      "d-requirement": 122,
+      "damage": [
+        41,
+        68
+      ],
+      "APS": 1.5,
+      "Crit": 5
+    },
+    {
+      "item-name": "Midnight Blade",
+      "level-requirement": 68,
+      "s-requirement": 113,
+      "d-requirement": 113,
+      "damage": [
+        35,
+        99
+      ],
+      "APS": 1.3,
+      "Crit": 5
+    },
+    {
+      "item-name": "Tiger Hook",
+      "level-requirement": 70,
+      "s-requirement": 119,
+      "d-requirement": 119,
+      "damage": [
+        49,
+        105
+      ],
+      "APS": 1.15,
+      "Crit": 5
+    }
+  ]
+}

@@ -1,0 +1,2261 @@
+{
+   "name": "one hand sword",
+   "prefixes": [
+      {
+         "affix-description": "#% increased Physical Damage<br>+# to Accuracy Rating",
+         "affix-tiers": [
+            {
+               "affix-item-level": 1,
+               "affix-name": "Squire's",
+               "affix-range": [
+                  [
+                     15,
+                     19
+                  ],
+                  [
+                     16,
+                     20
+                  ]
+               ],
+               "weight": 1000
+            },
+            {
+               "affix-item-level": 11,
+               "affix-name": "Journeyman's",
+               "affix-range": [
+                  [
+                     20,
+                     24
+                  ],
+                  [
+                     21,
+                     46
+                  ]
+               ],
+               "weight": 1000
+            },
+            {
+               "affix-item-level": 23,
+               "affix-name": "Reaver's",
+               "affix-range": [
+                  [
+                     25,
+                     34
+                  ],
+                  [
+                     47,
+                     72
+                  ]
+               ],
+               "weight": 1000
+            },
+            {
+               "affix-item-level": 35,
+               "affix-name": "Mercenary's",
+               "affix-range": [
+                  [
+                     35,
+                     44
+                  ],
+                  [
+                     73,
+                     97
+                  ]
+               ],
+               "weight": 400
+            },
+            {
+               "affix-item-level": 46,
+               "affix-name": "Champion's",
+               "affix-range": [
+                  [
+                     45,
+                     54
+                  ],
+                  [
+                     98,
+                     123
+                  ]
+               ],
+               "weight": 200
+            },
+            {
+               "affix-item-level": 60,
+               "affix-name": "Conqueror's",
+               "affix-range": [
+                  [
+                     55,
+                     64
+                  ],
+                  [
+                     124,
+                     149
+                  ]
+               ],
+               "weight": 100
+            },
+            {
+               "affix-item-level": 73,
+               "affix-name": "Emperor's",
+               "affix-range": [
+                  [
+                     65,
+                     74
+                  ],
+                  [
+                     150,
+                     174
+                  ]
+               ],
+               "weight": 50
+            },
+            {
+               "affix-item-level": 83,
+               "affix-name": "Dictator's",
+               "affix-range": [
+                  [
+                     75,
+                     79
+                  ],
+                  [
+                     175,
+                     200
+                  ]
+               ],
+               "weight": 25
+            }
+         ]
+      },
+      {
+         "affix-description": "#% increased Physical Damage",
+         "affix-tiers": [
+            {
+               "affix-item-level": 1,
+               "affix-name": "Heavy",
+               "affix-range": [
+                  [
+                     40,
+                     49
+                  ]
+               ],
+               "weight": 1000
+            },
+            {
+               "affix-item-level": 11,
+               "affix-name": "Serrated",
+               "affix-range": [
+                  [
+                     50,
+                     64
+                  ]
+               ],
+               "weight": 1000
+            },
+            {
+               "affix-item-level": 23,
+               "affix-name": "Wicked",
+               "affix-range": [
+                  [
+                     65,
+                     84
+                  ]
+               ],
+               "weight": 1000
+            },
+            {
+               "affix-item-level": 35,
+               "affix-name": "Vicious",
+               "affix-range": [
+                  [
+                     85,
+                     109
+                  ]
+               ],
+               "weight": 400
+            },
+            {
+               "affix-item-level": 46,
+               "affix-name": "Bloodthirsty",
+               "affix-range": [
+                  [
+                     110,
+                     134
+                  ]
+               ],
+               "weight": 200
+            },
+            {
+               "affix-item-level": 60,
+               "affix-name": "Cruel",
+               "affix-range": [
+                  [
+                     135,
+                     154
+                  ]
+               ],
+               "weight": 100
+            },
+            {
+               "affix-item-level": 73,
+               "affix-name": "Tyrannical",
+               "affix-range": [
+                  [
+                     155,
+                     165
+                  ]
+               ],
+               "weight": 50
+            },
+            {
+               "affix-item-level": 83,
+               "affix-name": "Merciless",
+               "affix-range": [
+                  [
+                     170,
+                     179
+                  ]
+               ],
+               "weight": 25
+            }
+         ]
+      },
+      {
+         "affix-description": "Add # to # Physical Damage",
+         "affix-tiers": [
+            {
+               "affix-item-level": 2,
+               "affix-name": "Glinting",
+               "affix-range": [
+                  [
+                     1,
+                     1
+                  ],
+                  [
+                     2,
+                     3
+                  ]
+               ],
+               "weight": 1000
+            },
+            {
+               "affix-item-level": 13,
+               "affix-name": "Burnished",
+               "affix-range": [
+                  [
+                     4,
+                     5
+                  ],
+                  [
+                     8,
+                     9
+                  ]
+               ],
+               "weight": 1000
+            },
+            {
+               "affix-item-level": 21,
+               "affix-name": "Polished",
+               "affix-range": [
+                  [
+                     6,
+                     8
+                  ],
+                  [
+                     13,
+                     15
+                  ]
+               ],
+               "weight": 1000
+            },
+            {
+               "affix-item-level": 29,
+               "affix-name": "Honed",
+               "affix-range": [
+                  [
+                     7,
+                     11
+                  ],
+                  [
+                     16,
+                     19
+                  ]
+               ],
+               "weight": 1000
+            },
+            {
+               "affix-item-level": 36,
+               "affix-name": "Gleaming",
+               "affix-range": [
+                  [
+                     9,
+                     13
+                  ],
+                  [
+                     20,
+                     24
+                  ]
+               ],
+               "weight": 1000
+            },
+            {
+               "affix-item-level": 46,
+               "affix-name": "Annealed",
+               "affix-range": [
+                  [
+                     13,
+                     17
+                  ],
+                  [
+                     26,
+                     30
+                  ]
+               ],
+               "weight": 800
+            },
+            {
+               "affix-item-level": 54,
+               "affix-name": "Razor-sharp",
+               "affix-range": [
+                  [
+                     14,
+                     19
+                  ],
+                  [
+                     29,
+                     35
+                  ]
+               ],
+               "weight": 600
+            },
+            {
+               "affix-item-level": 65,
+               "affix-name": "Tempered",
+               "affix-range": [
+                  [
+                     17,
+                     24
+                  ],
+                  [
+                     36,
+                     41
+                  ]
+               ],
+               "weight": 400
+            },
+            {
+               "affix-item-level": 77,
+               "affix-name": "Flaring",
+               "affix-range": [
+                  [
+                     20,
+                     27
+                  ],
+                  [
+                     41,
+                     49
+                  ]
+               ],
+               "weight": 200
+            }
+         ]
+      },
+      {
+         "affix-description": "Adds # to # Fire Damage",
+         "affix-tiers": [
+            {
+               "affix-item-level": 1,
+               "affix-name": "Heated",
+               "affix-range": [
+                  [
+                     1,
+                     2
+                  ],
+                  [
+                     3,
+                     4
+                  ]
+               ],
+               "weight": 1200
+            },
+            {
+               "affix-item-level": 11,
+               "affix-name": "Smouldering",
+               "affix-range": [
+                  [
+                     8,
+                     10
+                  ],
+                  [
+                     15,
+                     18
+                  ]
+               ],
+               "weight": 1200
+            },
+            {
+               "affix-item-level": 18,
+               "affix-name": "Smoking",
+               "affix-range": [
+                  [
+                     12,
+                     16
+                  ],
+                  [
+                     24,
+                     28
+                  ]
+               ],
+               "weight": 1200
+            },
+            {
+               "affix-item-level": 26,
+               "affix-name": "Burning",
+               "affix-range": [
+                  [
+                     17,
+                     22
+                  ],
+                  [
+                     33,
+                     39
+                  ]
+               ],
+               "weight": 1200
+            },
+            {
+               "affix-item-level": 33,
+               "affix-name": "Flaming",
+               "affix-range": [
+                  [
+                     21,
+                     28
+                  ],
+                  [
+                     42,
+                     49
+                  ]
+               ],
+               "weight": 1200
+            },
+            {
+               "affix-item-level": 42,
+               "affix-name": "Scorching",
+               "affix-range": [
+                  [
+                     26,
+                     35
+                  ],
+                  [
+                     53,
+                     61
+                  ]
+               ],
+               "weight": 1200
+            },
+            {
+               "affix-item-level": 51,
+               "affix-name": "Incinerating",
+               "affix-range": [
+                  [
+                     32,
+                     42
+                  ],
+                  [
+                     63,
+                     74
+                  ]
+               ],
+               "weight": 1200
+            },
+            {
+               "affix-item-level": 62,
+               "affix-name": "Blasting",
+               "affix-range": [
+                  [
+                     42,
+                     56
+                  ],
+                  [
+                     85,
+                     98
+                  ]
+               ],
+               "weight": 960
+            },
+            {
+               "affix-item-level": 74,
+               "affix-name": "Cremating",
+               "affix-range": [
+                  [
+                     59,
+                     79
+                  ],
+                  [
+                     118,
+                     138
+                  ]
+               ],
+               "weight": 420
+            },
+            {
+               "affix-item-level": 82,
+               "affix-name": "Carbonising",
+               "affix-range": [
+                  [
+                     82,
+                     112
+                  ],
+                  [
+                     167,
+                     194
+                  ]
+               ],
+               "weight": 108
+            }
+         ]
+      },
+      {
+         "affix-description": "Adds # to # Cold Damage",
+         "affix-tiers": [
+            {
+               "affix-item-level": 2,
+               "affix-name": "Frosted",
+               "affix-range": [
+                  [
+                     1,
+                     2
+                  ],
+                  [
+                     3,
+                     4
+                  ]
+               ],
+               "weight": 1200
+            },
+            {
+               "affix-item-level": 12,
+               "affix-name": "Chilled",
+               "affix-range": [
+                  [
+                     7,
+                     9
+                  ],
+                  [
+                     14,
+                     16
+                  ]
+               ],
+               "weight": 1200
+            },
+            {
+               "affix-item-level": 19,
+               "affix-name": "Icy",
+               "affix-range": [
+                  [
+                     11,
+                     14
+                  ],
+                  [
+                     22,
+                     25
+                  ]
+               ],
+               "weight": 1200
+            },
+            {
+               "affix-item-level": 27,
+               "affix-name": "Frigid",
+               "affix-range": [
+                  [
+                     15,
+                     20
+                  ],
+                  [
+                     30,
+                     35
+                  ]
+               ],
+               "weight": 1200
+            },
+            {
+               "affix-item-level": 34,
+               "affix-name": "Freezing",
+               "affix-range": [
+                  [
+                     19,
+                     24
+                  ],
+                  [
+                     38,
+                     44
+                  ]
+               ],
+               "weight": 1200
+            },
+            {
+               "affix-item-level": 43,
+               "affix-name": "Frozen",
+               "affix-range": [
+                  [
+                     23,
+                     43
+                  ],
+                  [
+                     48,
+                     55
+                  ]
+               ],
+               "weight": 1200
+            },
+            {
+               "affix-item-level": 52,
+               "affix-name": "Glaciated",
+               "affix-range": [
+                  [
+                     29,
+                     38
+                  ],
+                  [
+                     57,
+                     67
+                  ]
+               ],
+               "weight": 1200
+            },
+            {
+               "affix-item-level": 63,
+               "affix-name": "Polar",
+               "affix-range": [
+                  [
+                     37,
+                     51
+                  ],
+                  [
+                     78,
+                     88
+                  ]
+               ],
+               "weight": 960
+            },
+            {
+               "affix-item-level": 75,
+               "affix-name": "Entombing",
+               "affix-range": [
+                  [
+                     53,
+                     72
+                  ],
+                  [
+                     107,
+                     124
+                  ]
+               ],
+               "weight": 420
+            },
+            {
+               "affix-item-level": 82,
+               "affix-name": "Crystalising",
+               "affix-range": [
+                  [
+                     77,
+                     101
+                  ],
+                  [
+                     152,
+                     174
+                  ]
+               ],
+               "weight": 108
+            }
+         ]
+      },
+      {
+         "affix-description": "Adds # to # Lightning Damage",
+         "affix-tiers": [
+            {
+               "affix-item-level": 2,
+               "affix-name": "Frosted",
+               "affix-range": [
+                  [
+                     1,
+                     1
+                  ],
+                  [
+                     5,
+                     6
+                  ]
+               ],
+               "weight": 1200
+            },
+            {
+               "affix-item-level": 13,
+               "affix-name": "Buzzing",
+               "affix-range": [
+                  [
+                     2,
+                     2
+                  ],
+                  [
+                     25,
+                     29
+                  ]
+               ],
+               "weight": 1200
+            },
+            {
+               "affix-item-level": 19,
+               "affix-name": "Snapping",
+               "affix-range": [
+                  [
+                     1,
+                     4
+                  ],
+                  [
+                     40,
+                     45
+                  ]
+               ],
+               "weight": 1200
+            },
+            {
+               "affix-item-level": 31,
+               "affix-name": "Crackling",
+               "affix-range": [
+                  [
+                     2,
+                     5
+                  ],
+                  [
+                     55,
+                     63
+                  ]
+               ],
+               "weight": 1200
+            },
+            {
+               "affix-item-level": 34,
+               "affix-name": "Sparking",
+               "affix-range": [
+                  [
+                     2,
+                     6
+                  ],
+                  [
+                     70,
+                     79
+                  ]
+               ],
+               "weight": 1200
+            },
+            {
+               "affix-item-level": 42,
+               "affix-name": "Arcing",
+               "affix-range": [
+                  [
+                     3,
+                     8
+                  ],
+                  [
+                     89,
+                     99
+                  ]
+               ],
+               "weight": 1200
+            },
+            {
+               "affix-item-level": 51,
+               "affix-name": "Shocking",
+               "affix-range": [
+                  [
+                     3,
+                     9
+                  ],
+                  [
+                     105,
+                     120
+                  ]
+               ],
+               "weight": 1200
+            },
+            {
+               "affix-item-level": 63,
+               "affix-name": "Discharging",
+               "affix-range": [
+                  [
+                     4,
+                     12
+                  ],
+                  [
+                     198,
+                     224
+                  ]
+               ],
+               "weight": 1200
+            },
+            {
+               "affix-item-level": 82,
+               "affix-name": "Vapourising",
+               "affix-range": [
+                  [
+                     9,
+                     24
+                  ],
+                  [
+                     278,
+                     315
+                  ]
+               ],
+               "weight": 108
+            }
+         ]
+      },
+      {
+         "affix-description": "#% increased Elemental Damaeg with Attack Skills",
+         "affix-tiers": [
+            {
+               "affix-item-level": 4,
+               "affix-name": "Catalysing",
+               "affix-range": [
+                  [
+                     11,
+                     20
+                  ]
+               ],
+               "weight": 300
+            },
+            {
+               "affix-item-level": 15,
+               "affix-name": "Infusing",
+               "affix-range": [
+                  [
+                     21,
+                     30
+                  ]
+               ],
+               "weight": 300
+            },
+            {
+               "affix-item-level": 30,
+               "affix-name": "Empowering",
+               "affix-range": [
+                  [
+                     31,
+                     36
+                  ]
+               ],
+               "weight": 300
+            },
+            {
+               "affix-item-level": 60,
+               "affix-name": "Unleashed",
+               "affix-range": [
+                  [
+                     37,
+                     42
+                  ]
+               ],
+               "weight": 300
+            },
+            {
+               "affix-item-level": 81,
+               "affix-name": "Overpowering",
+               "affix-range": [
+                  [
+                     43,
+                     50
+                  ]
+               ],
+               "weight": 300
+            },
+            {
+               "affix-item-level": 86,
+               "affix-name": "Devastating",
+               "affix-range": [
+                  [
+                     51,
+                     59
+                  ]
+               ],
+               "weight": 300
+            }
+         ]
+      },
+      {
+         "affix-description": "# to Level of Socketed Gems",
+         "affix-tiers": [
+            {
+               "affix-item-level": 50,
+               "affix-name": "Paragon's",
+               "affix-range": [
+                  [
+                     1,
+                     1
+                  ]
+               ],
+               "weight": 1000
+            }
+         ]
+      },
+      {
+         "affix-description": "# to Level of Socketed Melee Gems",
+         "affix-tiers": [
+            {
+               "affix-item-level": 8,
+               "affix-name": "Combatant's",
+               "affix-range": [
+                  [
+                     1,
+                     1
+                  ]
+               ],
+               "weight": 1000
+            },
+            {
+               "affix-item-level": 63,
+               "affix-name": "Weaponmaster's",
+               "affix-range": [
+                  [
+                     2,
+                     2
+                  ]
+               ],
+               "weight": 1000
+            }
+         ]
+      },
+      {
+         "affix-description": "Adds # to # Chaos Damage",
+         "affix-tiers": [
+            {
+               "affix-item-level": 83,
+               "affix-name": "Malicious",
+               "affix-range": [
+                  [
+                     47,
+                     72
+                  ],
+                  [
+                     98,
+                     123
+                  ]
+               ],
+               "weight": 600
+            }
+         ]
+      }
+   ],
+   "suffixes": [
+      {
+         "affix-description": "+# to Strength",
+         "affix-tiers": [
+            {
+               "affix-item-level": 1,
+               "affix-name": "of the Brute",
+               "affix-range": [
+                  [
+                     8,
+                     12
+                  ]
+               ],
+               "weight": 1000
+            },
+            {
+               "affix-item-level": 11,
+               "affix-name": "of the Wrestler",
+               "affix-range": [
+                  [
+                     13,
+                     17
+                  ]
+               ],
+               "weight": 1000
+            },
+            {
+               "affix-item-level": 22,
+               "affix-name": "of the Bear",
+               "affix-range": [
+                  [
+                     18,
+                     22
+                  ]
+               ],
+               "weight": 1000
+            },
+            {
+               "affix-item-level": 33,
+               "affix-name": "of the Lion",
+               "affix-range": [
+                  [
+                     23,
+                     27
+                  ]
+               ],
+               "weight": 1000
+            },
+            {
+               "affix-item-level": 44,
+               "affix-name": "of the Gorilla",
+               "affix-range": [
+                  [
+                     28,
+                     32
+                  ]
+               ],
+               "weight": 1000
+            },
+            {
+               "affix-item-level": 55,
+               "affix-name": "of the Goliath",
+               "affix-range": [
+                  [
+                     33,
+                     37
+                  ]
+               ],
+               "weight": 1000
+            },
+            {
+               "affix-item-level": 66,
+               "affix-name": "of the Leviathan",
+               "affix-range": [
+                  [
+                     38,
+                     42
+                  ]
+               ],
+               "weight": 1000
+            },
+            {
+               "affix-item-level": 74,
+               "affix-name": "of the Titan",
+               "affix-range": [
+                  [
+                     43,
+                     50
+                  ]
+               ],
+               "weight": 1000
+            },
+            {
+               "affix-item-level": 82,
+               "affix-name": "of the Gods",
+               "affix-range": [
+                  [
+                     51,
+                     55
+                  ]
+               ],
+               "weight": 1000
+            }
+         ]
+      },
+      {
+         "affix-description": "+# to Dexterity",
+         "affix-tiers": [
+            {
+               "affix-item-level": 1,
+               "affix-name": "of the Mongoose",
+               "affix-range": [
+                  [
+                     8,
+                     12
+                  ]
+               ],
+               "weight": 1000
+            },
+            {
+               "affix-item-level": 11,
+               "affix-name": "of the Lynx",
+               "affix-range": [
+                  [
+                     13,
+                     17
+                  ]
+               ],
+               "weight": 1000
+            },
+            {
+               "affix-item-level": 22,
+               "affix-name": "of the Fox",
+               "affix-range": [
+                  [
+                     18,
+                     22
+                  ]
+               ],
+               "weight": 1000
+            },
+            {
+               "affix-item-level": 33,
+               "affix-name": "of the Falcon",
+               "affix-range": [
+                  [
+                     23,
+                     27
+                  ]
+               ],
+               "weight": 1000
+            },
+            {
+               "affix-item-level": 44,
+               "affix-name": "of the Panther",
+               "affix-range": [
+                  [
+                     28,
+                     32
+                  ]
+               ],
+               "weight": 1000
+            },
+            {
+               "affix-item-level": 55,
+               "affix-name": "of the Leopard",
+               "affix-range": [
+                  [
+                     33,
+                     37
+                  ]
+               ],
+               "weight": 1000
+            },
+            {
+               "affix-item-level": 66,
+               "affix-name": "of the Jaguar",
+               "affix-range": [
+                  [
+                     38,
+                     42
+                  ]
+               ],
+               "weight": 1000
+            },
+            {
+               "affix-item-level": 74,
+               "affix-name": "of the Phantom",
+               "affix-range": [
+                  [
+                     43,
+                     50
+                  ]
+               ],
+               "weight": 1000
+            },
+            {
+               "affix-item-level": 82,
+               "affix-name": "of the Wind",
+               "affix-range": [
+                  [
+                     51,
+                     55
+                  ]
+               ],
+               "weight": 1000
+            }
+         ]
+      },
+      {
+         "affix-description": "#% increased Attack Speed",
+         "affix-tiers": [
+            {
+               "affix-item-level": 1,
+               "affix-name": "of Skill",
+               "affix-range": [
+                  [
+                     5,
+                     7
+                  ]
+               ],
+               "weight": 1000
+            },
+            {
+               "affix-item-level": 11,
+               "affix-name": "of Ease",
+               "affix-range": [
+                  [
+                     8,
+                     10
+                  ]
+               ],
+               "weight": 1000
+            },
+            {
+               "affix-item-level": 22,
+               "affix-name": "of Mastery",
+               "affix-range": [
+                  [
+                     11,
+                     13
+                  ]
+               ],
+               "weight": 1000
+            },
+            {
+               "affix-item-level": 30,
+               "affix-name": "of Renown",
+               "affix-range": [
+                  [
+                     14,
+                     16
+                  ]
+               ],
+               "weight": 1000
+            },
+            {
+               "affix-item-level": 37,
+               "affix-name": "of Acclaim",
+               "affix-range": [
+                  [
+                     17,
+                     19
+                  ]
+               ],
+               "weight": 1000
+            },
+            {
+               "affix-item-level": 45,
+               "affix-name": "of Fame",
+               "affix-range": [
+                  [
+                     20,
+                     22
+                  ]
+               ],
+               "weight": 1000
+            },
+            {
+               "affix-item-level": 60,
+               "affix-name": "of Infamy",
+               "affix-range": [
+                  [
+                     23,
+                     25
+                  ]
+               ],
+               "weight": 1000
+            },
+            {
+               "affix-item-level": 77,
+               "affix-name": "of Celebration",
+               "affix-range": [
+                  [
+                     26,
+                     27
+                  ]
+               ],
+               "weight": 1000
+            }
+         ]
+      },
+      {
+         "affix-description": "#% reduced Enemy Stun Threshold",
+         "affix-tiers": [
+            {
+               "affix-item-level": 5,
+               "affix-name": "of the Pugilist",
+               "affix-range": [
+                  [
+                     5,
+                     7
+                  ]
+               ],
+               "weight": 1000
+            },
+            {
+               "affix-item-level": 20,
+               "affix-name": "of the Brawler",
+               "affix-range": [
+                  [
+                     8,
+                     9
+                  ]
+               ],
+               "weight": 1000
+            },
+            {
+               "affix-item-level": 30,
+               "affix-name": "of the Boxer",
+               "affix-range": [
+                  [
+                     10,
+                     11
+                  ]
+               ],
+               "weight": 1000
+            },
+            {
+               "affix-item-level": 44,
+               "affix-name": "of the Combatant",
+               "affix-range": [
+                  [
+                     12,
+                     13
+                  ]
+               ],
+               "weight": 1000
+            },
+            {
+               "affix-item-level": 58,
+               "affix-name": "of the Gladiator",
+               "affix-range": [
+                  [
+                     14,
+                     15
+                  ]
+               ],
+               "weight": 1000
+            }
+         ]
+      },
+      {
+         "affix-description": "+#% to Fire Resistance",
+         "affix-tiers": [
+            {
+               "affix-item-level": 1,
+               "affix-name": "of the Whlepling",
+               "affix-range": [
+                  [
+                     6,
+                     11
+                  ]
+               ],
+               "weight": 500
+            },
+            {
+               "affix-item-level": 12,
+               "affix-name": "of the Salamander",
+               "affix-range": [
+                  [
+                     12,
+                     17
+                  ]
+               ],
+               "weight": 500
+            },
+            {
+               "affix-item-level": 24,
+               "affix-name": "of the Drake",
+               "affix-range": [
+                  [
+                     18,
+                     23
+                  ]
+               ],
+               "weight": 500
+            },
+            {
+               "affix-item-level": 36,
+               "affix-name": "of the Kiln",
+               "affix-range": [
+                  [
+                     24,
+                     29
+                  ]
+               ],
+               "weight": 500
+            },
+            {
+               "affix-item-level": 48,
+               "affix-name": "of the Furnace",
+               "affix-range": [
+                  [
+                     30,
+                     35
+                  ]
+               ],
+               "weight": 500
+            },
+            {
+               "affix-item-level": 60,
+               "affix-name": "of the Volcano",
+               "affix-range": [
+                  [
+                     36,
+                     41
+                  ]
+               ],
+               "weight": 500
+            },
+            {
+               "affix-item-level": 72,
+               "affix-name": "of the Magma",
+               "affix-range": [
+                  [
+                     42,
+                     45
+                  ]
+               ],
+               "weight": 500
+            },
+            {
+               "affix-item-level": 84,
+               "affix-name": "of Tzteosh",
+               "affix-range": [
+                  [
+                     46,
+                     48
+                  ]
+               ],
+               "weight": 500
+            }
+         ]
+      },
+      {
+         "affix-description": "+#% to Cold Resistance",
+         "affix-tiers": [
+            {
+               "affix-item-level": 1,
+               "affix-name": "of the Inuit",
+               "affix-range": [
+                  [
+                     6,
+                     11
+                  ]
+               ],
+               "weight": 500
+            },
+            {
+               "affix-item-level": 14,
+               "affix-name": "of the Seal",
+               "affix-range": [
+                  [
+                     12,
+                     17
+                  ]
+               ],
+               "weight": 500
+            },
+            {
+               "affix-item-level": 26,
+               "affix-name": "of the Penguin",
+               "affix-range": [
+                  [
+                     18,
+                     23
+                  ]
+               ],
+               "weight": 500
+            },
+            {
+               "affix-item-level": 38,
+               "affix-name": "of the Yeti",
+               "affix-range": [
+                  [
+                     24,
+                     29
+                  ]
+               ],
+               "weight": 500
+            },
+            {
+               "affix-item-level": 50,
+               "affix-name": "of the Walrus",
+               "affix-range": [
+                  [
+                     30,
+                     35
+                  ]
+               ],
+               "weight": 500
+            },
+            {
+               "affix-item-level": 60,
+               "affix-name": "of the Polar Bear",
+               "affix-range": [
+                  [
+                     36,
+                     41
+                  ]
+               ],
+               "weight": 500
+            },
+            {
+               "affix-item-level": 72,
+               "affix-name": "of the Ice",
+               "affix-range": [
+                  [
+                     42,
+                     45
+                  ]
+               ],
+               "weight": 500
+            },
+            {
+               "affix-item-level": 84,
+               "affix-name": "of Haast",
+               "affix-range": [
+                  [
+                     46,
+                     48
+                  ]
+               ],
+               "weight": 500
+            }
+         ]
+      },
+      {
+         "affix-description": "+#% to Lightning Resistance",
+         "affix-tiers": [
+            {
+               "affix-item-level": 1,
+               "affix-name": "of the Cloud",
+               "affix-range": [
+                  [
+                     6,
+                     11
+                  ]
+               ],
+               "weight": 500
+            },
+            {
+               "affix-item-level": 13,
+               "affix-name": "of the Squall",
+               "affix-range": [
+                  [
+                     12,
+                     17
+                  ]
+               ],
+               "weight": 500
+            },
+            {
+               "affix-item-level": 25,
+               "affix-name": "of the Storm",
+               "affix-range": [
+                  [
+                     18,
+                     23
+                  ]
+               ],
+               "weight": 500
+            },
+            {
+               "affix-item-level": 37,
+               "affix-name": "of the Thunderhead",
+               "affix-range": [
+                  [
+                     24,
+                     29
+                  ]
+               ],
+               "weight": 500
+            },
+            {
+               "affix-item-level": 49,
+               "affix-name": "of the Tempest",
+               "affix-range": [
+                  [
+                     30,
+                     35
+                  ]
+               ],
+               "weight": 500
+            },
+            {
+               "affix-item-level": 60,
+               "affix-name": "of the Maelstrom",
+               "affix-range": [
+                  [
+                     36,
+                     41
+                  ]
+               ],
+               "weight": 500
+            },
+            {
+               "affix-item-level": 72,
+               "affix-name": "of the Lightning",
+               "affix-range": [
+                  [
+                     42,
+                     45
+                  ]
+               ],
+               "weight": 500
+            },
+            {
+               "affix-item-level": 84,
+               "affix-name": "of Ephiji",
+               "affix-range": [
+                  [
+                     46,
+                     48
+                  ]
+               ],
+               "weight": 500
+            }
+         ]
+      },
+      {
+         "affix-description": "+#% to Chaos Resistance",
+         "affix-tiers": [
+            {
+               "affix-item-level": 16,
+               "affix-name": "of the Lost",
+               "affix-range": [
+                  [
+                     5,
+                     10
+                  ]
+               ],
+               "weight": 125
+            },
+            {
+               "affix-item-level": 30,
+               "affix-name": "of Banishment",
+               "affix-range": [
+                  [
+                     11,
+                     15
+                  ]
+               ],
+               "weight": 125
+            },
+            {
+               "affix-item-level": 44,
+               "affix-name": "of Eviction",
+               "affix-range": [
+                  [
+                     16,
+                     20
+                  ]
+               ],
+               "weight": 125
+            },
+            {
+               "affix-item-level": 56,
+               "affix-name": "of Expulsion",
+               "affix-range": [
+                  [
+                     21,
+                     25
+                  ]
+               ],
+               "weight": 125
+            },
+            {
+               "affix-item-level": 65,
+               "affix-name": "of Exile",
+               "affix-range": [
+                  [
+                     26,
+                     30
+                  ]
+               ],
+               "weight": 125
+            },
+            {
+               "affix-item-level": 81,
+               "affix-name": "of Bameth",
+               "affix-range": [
+                  [
+                     31,
+                     35
+                  ]
+               ],
+               "weight": 125
+            }
+         ]
+      },
+      {
+         "affix-description": "%increased Stun Duration on Enemies",
+         "affix-tiers": [
+            {
+               "affix-item-level": 5,
+               "affix-name": "of Impact",
+               "affix-range": [
+                  [
+                     11,
+                     15
+                  ]
+               ],
+               "weight": 1000
+            },
+            {
+               "affix-item-level": 18,
+               "affix-name": "of Dazing",
+               "affix-range": [
+                  [
+                     16,
+                     20
+                  ]
+               ],
+               "weight": 1000
+            },
+            {
+               "affix-item-level": 30,
+               "affix-name": "of Stunning",
+               "affix-range": [
+                  [
+                     21,
+                     25
+                  ]
+               ],
+               "weight": 1000
+            },
+            {
+               "affix-item-level": 44,
+               "affix-name": "of Slamming",
+               "affix-range": [
+                  [
+                     26,
+                     30
+                  ]
+               ],
+               "weight": 1000
+            },
+            {
+               "affix-item-level": 58,
+               "affix-name": "of Stagering",
+               "affix-range": [
+                  [
+                     31,
+                     35
+                  ]
+               ],
+               "weight": 1000
+            }
+         ]
+      },
+      {
+         "affix-description": "+# Life gained for each Enemy hit by Attacks",
+         "affix-tiers": [
+            {
+               "affix-item-level": 8,
+               "affix-name": "of Rejuvenation",
+               "affix-range": [
+                  [
+                     2,
+                     2
+                  ]
+               ],
+               "weight": 1000
+            },
+            {
+               "affix-item-level": 20,
+               "affix-name": "of Restoration",
+               "affix-range": [
+                  [
+                     33
+                  ]
+               ],
+               "weight": 1000
+            },
+            {
+               "affix-item-level": 30,
+               "affix-name": "of Regrowth",
+               "affix-range": [
+                  [
+                     4,
+                     4
+                  ]
+               ],
+               "weight": 1000
+            },
+            {
+               "affix-item-level": 40,
+               "affix-name": "of Nourishment",
+               "affix-range": [
+                  [
+                     5,
+                     5
+                  ]
+               ],
+               "weight": 1000
+            }
+         ]
+      },
+      {
+         "affix-description": "+# Life gained on Kill",
+         "affix-tiers": [
+            {
+               "affix-item-level": 1,
+               "affix-name": "of Success",
+               "affix-range": [
+                  [
+                     3,
+                     6
+                  ]
+               ],
+               "weight": 1000
+            },
+            {
+               "affix-item-level": 23,
+               "affix-name": "of Victory",
+               "affix-range": [
+                  [
+                     7,
+                     10
+                  ]
+               ],
+               "weight": 1000
+            },
+            {
+               "affix-item-level": 40,
+               "affix-name": "of Triumph",
+               "affix-range": [
+                  [
+                     11,
+                     14
+                  ]
+               ],
+               "weight": 1000
+            }
+         ]
+      },
+      {
+         "affix-description": "+# Mana gained on Kill",
+         "affix-tiers": [
+            {
+               "affix-item-level": 1,
+               "affix-name": "of Absorption",
+               "affix-range": [
+                  [
+                     1,
+                     1
+                  ]
+               ],
+               "weight": 1000
+            },
+            {
+               "affix-item-level": 24,
+               "affix-name": "of Osmosis",
+               "affix-range": [
+                  [
+                     2,
+                     3
+                  ]
+               ],
+               "weight": 1000
+            },
+            {
+               "affix-item-level": 40,
+               "affix-name": "of Consumption",
+               "affix-range": [
+                  [
+                     4,
+                     6
+                  ]
+               ],
+               "weight": 1000
+            }
+         ]
+      },
+      {
+         "affix-description": "%increased Critical Strike Chance",
+         "affix-tiers": [
+            {
+               "affix-item-level": 1,
+               "affix-name": "of Needling",
+               "affix-range": [
+                  [
+                     10,
+                     14
+                  ]
+               ],
+               "weight": 1000
+            },
+            {
+               "affix-item-level": 20,
+               "affix-name": "of Stinging",
+               "affix-range": [
+                  [
+                     15,
+                     19
+                  ]
+               ],
+               "weight": 1000
+            },
+            {
+               "affix-item-level": 30,
+               "affix-name": "of Piercing",
+               "affix-range": [
+                  [
+                     20,
+                     24
+                  ]
+               ],
+               "weight": 1000
+            },
+            {
+               "affix-item-level": 44,
+               "affix-name": "of Puncturing",
+               "affix-range": [
+                  [
+                     25,
+                     29
+                  ]
+               ],
+               "weight": 1000
+            },
+            {
+               "affix-item-level": 59,
+               "affix-name": "of Penetrating",
+               "affix-range": [
+                  [
+                     30,
+                     34
+                  ]
+               ],
+               "weight": 1000
+            },
+            {
+               "affix-item-level": 73,
+               "affix-name": "of Incision",
+               "affix-range": [
+                  [
+                     35,
+                     38
+                  ]
+               ],
+               "weight": 1000
+            }
+         ]
+      },
+      {
+         "affix-description": "+#% to Global Critical Strike Multiplier",
+         "affix-tiers": [
+            {
+               "affix-item-level": 8,
+               "affix-name": "of Ire",
+               "affix-range": [
+                  [
+                     10,
+                     14
+                  ]
+               ],
+               "weight": 1000
+            },
+            {
+               "affix-item-level": 21,
+               "affix-name": "of Anger",
+               "affix-range": [
+                  [
+                     15,
+                     19
+                  ]
+               ],
+               "weight": 1000
+            },
+            {
+               "affix-item-level": 30,
+               "affix-name": "of Rage",
+               "affix-range": [
+                  [
+                     20,
+                     24
+                  ]
+               ],
+               "weight": 1000
+            },
+            {
+               "affix-item-level": 44,
+               "affix-name": "of Fury",
+               "affix-range": [
+                  [
+                     25,
+                     29
+                  ]
+               ],
+               "weight": 1000
+            },
+            {
+               "affix-item-level": 59,
+               "affix-name": "of Ferocity",
+               "affix-range": [
+                  [
+                     30,
+                     34
+                  ]
+               ],
+               "weight": 1000
+            },
+            {
+               "affix-item-level": 73,
+               "affix-name": "of Destruction",
+               "affix-range": [
+                  [
+                     35,
+                     38
+                  ]
+               ],
+               "weight": 1000
+            }
+         ]
+      },
+      {
+         "affix-description": "+# to Accuracy Rating",
+         "affix-tiers": [
+            {
+               "affix-item-level": 1,
+               "affix-name": "of Steadiness",
+               "affix-range": [
+                  [
+                     80,
+                     130
+                  ]
+               ],
+               "weight": 1000
+            },
+            {
+               "affix-item-level": 20,
+               "affix-name": "of Precision",
+               "affix-range": [
+                  [
+                     131,
+                     215
+                  ]
+               ],
+               "weight": 1000
+            },
+            {
+               "affix-item-level": 40,
+               "affix-name": "of the Sniper",
+               "affix-range": [
+                  [
+                     216,
+                     325
+                  ]
+               ],
+               "weight": 1000
+            },
+            {
+               "affix-item-level": 60,
+               "affix-name": "of the Marksman",
+               "affix-range": [
+                  [
+                     326,
+                     455
+                  ]
+               ],
+               "weight": 1000
+            },
+            {
+               "affix-item-level": 75,
+               "affix-name": "of the Ranger",
+               "affix-range": [
+                  [
+                     456,
+                     624
+                  ]
+               ],
+               "weight": 1000
+            }
+         ]
+      },
+      {
+         "affix-description": "#% reduced Attribute Requirements",
+         "affix-tiers": [
+            {
+               "affix-item-level": 36,
+               "affix-name": "of the Worthy",
+               "affix-range": [
+                  [
+                     18,
+                     18
+                  ]
+               ],
+               "weight": 1000
+            },
+            {
+               "affix-item-level": 60,
+               "affix-name": "of the Apt",
+               "affix-range": [
+                  [
+                     32,
+                     32
+                  ]
+               ],
+               "weight": 1000
+            }
+         ]
+      },
+      {
+         "affix-description": "#% increased Light Radius<br>#% increased Global Accuracy Rating",
+         "affix-tiers": [
+            {
+               "affix-item-level": 8,
+               "affix-name": "of Shining",
+               "affix-range": [
+                  [
+                     5,
+                     5
+                  ],
+                  [
+                     9,
+                     11
+                  ]
+               ],
+               "weight": 500
+            },
+            {
+               "affix-item-level": 15,
+               "affix-name": "of Light",
+               "affix-range": [
+                  [
+                     10,
+                     10
+                  ],
+                  [
+                     12,
+                     15
+                  ]
+               ],
+               "weight": 500
+            },
+            {
+               "affix-item-level": 30,
+               "affix-name": "of Radiance",
+               "affix-range": [
+                  [
+                     30,
+                     30
+                  ],
+                  [
+                     16,
+                     20
+                  ]
+               ],
+               "weight": 500
+            }
+         ]
+      },
+      {
+         "affix-description": "#% increased Damage with Poison<br>#% chance to Poison on Hit",
+         "affix-tiers": [
+            {
+               "affix-item-level": 20,
+               "affix-name": "of Poison",
+               "affix-range": [
+                  [
+                     21,
+                     30
+                  ],
+                  [
+                     20,
+                     20
+                  ]
+               ],
+               "weight": 1500
+            },
+            {
+               "affix-item-level": 40,
+               "affix-name": "of Venom",
+               "affix-range": [
+                  [
+                     31,
+                     40
+                  ],
+                  [
+                     25,
+                     25
+                  ]
+               ],
+               "weight": 1500
+            },
+            {
+               "affix-item-level": 60,
+               "affix-name": "of Virulence",
+               "affix-range": [
+                  [
+                     41,
+                     50
+                  ],
+                  [
+                     30,
+                     30
+                  ]
+               ],
+               "weight": 500
+            }
+         ]
+      },
+      {
+         "affix-description": "#% increased Damage with Bleeding<br>Attacks have #% chance to cause Bleeding",
+         "affix-tiers": [
+            {
+               "affix-item-level": 20,
+               "affix-name": "of Bloodletting",
+               "affix-range": [
+                  [
+                     21,
+                     30
+                  ],
+                  [
+                     20,
+                     20
+                  ]
+               ],
+               "weight": 1500
+            },
+            {
+               "affix-item-level": 40,
+               "affix-name": "of Haemophilia",
+               "affix-range": [
+                  [
+                     31,
+                     40
+                  ],
+                  [
+                     25,
+                     25
+                  ]
+               ],
+               "weight": 1500
+            },
+            {
+               "affix-item-level": 60,
+               "affix-name": "of Exsanguination",
+               "affix-range": [
+                  [
+                     45,
+                     50
+                  ],
+                  [
+                     30,
+                     30
+                  ]
+               ],
+               "weight": 500
+            }
+         ]
+      },
+      {
+         "affix-description": "+#% to Damage over Time Multiplier",
+         "affix-tiers": [
+            {
+               "affix-item-level": 44,
+               "affix-name": "of Acrimony",
+               "affix-range": [
+                  [
+                     7,
+                     11
+                  ]
+               ],
+               "weight": 300
+            },
+            {
+               "affix-item-level": 68,
+               "affix-name": "of Dispersion",
+               "affix-range": [
+                  [
+                     12,
+                     15
+                  ]
+               ],
+               "weight": 300
+            },
+            {
+               "affix-item-level": 82,
+               "affix-name": "of Liquefaction",
+               "affix-range": [
+                  [
+                     16,
+                     18
+                  ]
+               ],
+               "weight": 300
+            }
+         ]
+      }
+   ]
+}
