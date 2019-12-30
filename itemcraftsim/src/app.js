@@ -39,11 +39,21 @@ function baseTypeChange() {
 		}
 	}
 	xhr2.send(null);
+
 }
 
-
+/*
 
 function generateNewItem() {
 
+	item_type_field = document.getElementById("item-type");
+	base_type_field = document.getElementById("base-type");
+	item_level_field = document.getElementById("item-level");
+
+	base_types.map(function(base) {
+		if (base.name === base_type_field)
+	});
 
 }
+
+*/
