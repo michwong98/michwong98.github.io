@@ -1735,7 +1735,9 @@
                "affix-name": "of Restoration",
                "affix-range": [
                   [
-                     33
+                     3,
+                     3
+
                   ]
                ],
                "weight": 1000

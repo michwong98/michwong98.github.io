@@ -1,64 +1,13 @@
-var item_types = ["one hand sowrd"];
-var base_types = [];
-var affixes = [];
+var affixes = require('./JSON/one-hand-sword-affixes.json');
+var item_bases = require('./JSON/one-hand-sword.json');
+
 var current_item = {
-	"base_type": "",
-	"item_level": -1,
-	"rarity": -1,
-	"quality": -1,
-	"prefixes": [],
-	"suffixes": []
+	rarity: 0,
+	base_type: item_bases[0],
+	item_level: 50,
+	prefixes: [],
+	suffixes: []
 }
-var item_type_field, base_type_field, item_level_field;
-
-
-
-window.addEventListener("DOMContentLoaded", (evt) => {
-
-	item_type_field = document.getElementById("item-type");
-	item_base_field = document.getElementById("item-base");
-	item_level_field = document.getElementById("item-level");
-
-	item_type_field.addEventListener("change", baseTypeChange);
-	document.getElementById("new-item-button").addEventListener("click", generateNewItem);
-
-
-});
-
-function baseTypeChange() {
-
-	var item_type = item_type_field.value;
-
-	var xhr1 = new XMLHttpRequest();
-	xhr1.open("GET", "./JSON/" + item_type + ".json", true);
-	xhr1.onreadystatechange = function() {
-		if (xhr1.readyState == 4 && xhr1.status == "200") {
-
-			base_types = JSON.parse(xhr1.responseText).bases;
-			
-			var first = item_base_field.firstElementChild();
-			while (first) {
-				first.remove();
-				first = item_base_field.firstElementChild();
-			}
-
-			console.log(base_types)
-
-
-			base_types.forEach(function(base) {
-				var new_node = document.createElement("option");
-				new_node.setAttribute("value", base["item-name"]);
-				new_node.value = base["item-name"];
-
-				item_base_field.appendChild(new_node);
-			});
-		}
-	};
-	xhr1.send(null);
-
-}
-
-
 
 function generateAvailableAffixes() {
 	var availableAffixes = {"prefixes": [], "suffixes": []};
@@ -104,8 +53,6 @@ function generateAvailableAffixes() {
 
 function selectAffix(availableAffixes, selection) {
 	var weight = 0;
-	console.log("something here", availableAffixes.prefixes.length + availableAffixes.suffixes.length);
-	console.log("dududu", affixes.prefixes.length + affixes.suffixes.length);
 
 	if (selection !== 2) {
 		weight = weight + 
@@ -325,29 +272,19 @@ function annul() {
 	}
 }
 
-function blacksmith() {
-	if (current_item.quality >= 20 || current_item.rarity ==) {
-		return;
-	} else {
-		switch (current_item.rarity) {
-			case 0:
-				if (current_item.quality <= 15) {
-					current_item.quality += 5;
-				} else {
-					current_item.quality = 20;
-				}
-				return;
-			case 1:
-				if (current_item.quality >= 18) {
-					current_item.quality += 2;
-				} else {
-					current_item.quality = 20;
-				}
-				return;
-			case 2:
-				current_item.quality++;
-				return;
-		}
-			
-	}
-}
+alchemy();
+console.log(current_item);
+exalt();
+console.log(current_item);
+annul();
+console.log(current_item);
+annul();
+console.log(current_item);
+annul();
+console.log(current_item);
+annul();
+console.log(current_item);
+annul();
+console.log(current_item);
+annul();
+console.log(current_item);

@@ -2,6 +2,11 @@ body {
 	background: black;
 	height: 100%;
 	width: 100%;
+	font-size: 100%;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 .core {
@@ -9,33 +14,75 @@ body {
 	border-radius: 25px;
 	display: block;
 	width: 60%;
-	height: 80%;
+	height: 95%;
 	margin-left: auto;
 	margin-right: auto;
 	color:white;
 }
 
 .title {
-	width: 90%;
+	width: 60%;
 	text-align: center;
 	display: block;
+	font-size: 1.2em;
 	margin: auto;
 	padding: 20px;
 	border-bottom-color: black;
-	border-bottom-width: 5px;
+	border-bottom-width: 10px;
 	border-bottom-style: solid;
-
 }
 
-.h1 {
-	font-size: 4em;
+.crafting-display {
+	display: block;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	width:40%;
+	border-style: solid;
+	border-width: 5px;
+	border-color: #181818;
+}
+
+.item-name {
+	text-align: center;
+	font-size: 1.5em;
+	height: 1.8em;
+	border-style: solid;
+	border-width: 6px;
+}
+
+.item-name[rarity="0"] {
+	color: #DCDCDC;
+	border-color: #DCDCDC;
+	background-color: #454545;
+}
+
+.stats{
+	text-align: center;
+	font-size: 1.5em;
+	height: 8.2em;
+	border-width: 6px;
+	border-style: solid;
+	border-color: #202020;
+	background-color: #202020;
+}
+
+.affixes {
+	font-size: 1.5em;
+	height: 10.5em;
+	background-color: #000b1a;
+	border-width: 6px;
+	border-style: solid;
+	border-color: #000b1a;
 }
 
 form {
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
-
 }
 
 select {
@@ -45,4 +92,49 @@ select {
 
 #item-level {
 	width: 10%;
+}
+
+div {
+	margin:0px;
+}
+
+.crafting-currency {
+	margin-right: auto;
+	margin-left: auto;
+	width:90%;
+}
+
+.crafting-currency::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.currency-container {
+	float:left;
+	width: 9%;
+	display: block;
+	background-color: #262626;
+	border-color: #202020;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 12px;
+}
+
+.currency-container .tooltiptext {
+	visibility: hidden;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px;
+
+	position: absolute;
+	z-index: 1;
+}
+
+.currency-container:hover .tooltiptext {
+	-webkit-transition-delay: 1s;
+	transition-delay: 1s;
+	visibility: visible;
 }
