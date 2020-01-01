@@ -58,7 +58,37 @@ function baseTypeChange() {
 
 }
 
+function generateNewItem() {
 
+	var item_base = item_base_field.value;
+	if (item_base === "" || item_base === null) {
+		return;
+	} else if {
+		var bool = true;
+		base_types.forEach(function(base_type) {
+			if (base_type["item-name"] === item_base) {
+				bool = false;
+				item_base = base_type;
+			}
+		});
+		if (bool) {
+			return;
+		}
+	}
+	var item_level = item_level_field.value;
+	if (item_Level === null || item_level < 1 || item_level > 100) {
+		return;
+	}
+
+	current_item.base_type = item_base;
+	current_item.item_level = item_type_field;
+	current_item.rarity = 0;
+	current_item.prefixes = [];
+	current_item.suffixes = [];
+
+	document.getElementById("crafting-display").setAttribute("visibility", "visible");
+
+}
 
 function generateAvailableAffixes() {
 	var availableAffixes = {"prefixes": [], "suffixes": []};
@@ -326,7 +356,7 @@ function annul() {
 }
 
 function blacksmith() {
-	if (current_item.quality >= 20 || current_item.rarity ==) {
+	if (current_item.quality >= 20 || current_item.rarity == -1) {
 		return;
 	} else {
 		switch (current_item.rarity) {
