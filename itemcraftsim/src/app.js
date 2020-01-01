@@ -63,7 +63,7 @@ function generateNewItem() {
 	var item_base = item_base_field.value;
 	if (item_base === "" || item_base === null) {
 		return;
-	} else if {
+	} else {
 		var bool = true;
 		base_types.forEach(function(base_type) {
 			if (base_type["item-name"] === item_base) {
