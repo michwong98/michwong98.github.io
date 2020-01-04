@@ -36,13 +36,11 @@ function baseTypeChange() {
 
 			base_types = JSON.parse(xhr1.responseText).bases;
 			
-			var first = item_base_field.firstElementChild();
+			var first = item_base_field.firstChild();
 			while (first) {
 				first.remove();
-				first = item_base_field.firstElementChild();
+				first = item_base_field.firstChild();
 			}
-
-			console.log(base_types)
 
 
 			base_types.forEach(function(base) {

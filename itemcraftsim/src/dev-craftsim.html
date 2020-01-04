@@ -1,0 +1,126 @@
+<! doctype html>
+<html lang="en">
+
+
+<head>
+	<meta charset="utf-8">
+	<title>Item Crafting Simulator</title>
+	<!script src="./dev-app.js"></script>
+	<link rel="stylesheet" type="text/css" href="./dev-craftstyle.css"/>
+	<link rel="icon" type="image/png" href="./img/Chaos.png">
+</head>
+
+
+<body>
+
+	<div class="top-banner">
+		<img src="./img/Chaos.png" alt="image" height="100%" width="auto" padding="4px" style="margin-left: 2%;"/>
+		<a style="font-size: 6vh; display: inline-block; margin-top: auto; margin-bottom: auto;">Item Crafting Simumlator</a>
+	</div>
+
+	<div class="main">
+		
+		<div class="core-wrapper">
+
+			<div class="crafting-wrapper">
+
+				<form id="new-item-selection">
+					<select id="item-type">
+						<option disabled selected value> Item Type </option>
+						<option value="one-hand-sword"> One Handed Sword </option>
+						<option value="utility-flask"> Utility Flask </option>
+					</select>
+					<select id="item-base">
+					</select>
+					<input type="number" max="100" min="1" placeholder="Item Level" id="item-level">
+					<button type="button" style="width:20%" id="new-item-button"> New Item </button>
+				</form>
+
+				<div class="currency-select-wrapper">
+
+					<div class="currency-wrapper" id="transmute">
+						<div class="currency-img-container"><img src="./img/Transmutation.png" style="display: block; margin-left:auto; margin-right: auto;"></div>
+						<div class="currency-text-container"><p>Transmutation Orb<br>Transform a normal item to a magic rarity.</p></div>
+					</div>
+
+					<div class="currency-wrapper" id="alteration">
+						<div class="currency-img-container"><img src="./img/Alteration.png" style="display: block; margin-left:auto; margin-right: auto;"></div>
+						<div class="currency-text-container"><p>Alteration Orb<br>Rerolls the affixes of a magic item.</p></div>
+					</div>
+
+					<div class="currency-wrapper" id="augment">
+						<div class="currency-img-container"><img src="./img/Augmentation.png" style="display: block; margin-left:auto; margin-right: auto;"></div>
+						<div class="currency-text-container"><p>Augmentation Orb<br>Adds a second explicit mod to a magic item.</p></div>
+					</div>
+
+					<div class="currency-wrapper" id="alchemy">
+						<div class="currency-img-container"><img src="./img/Alchemy.png" style="display: block; margin-left:auto; margin-right: auto;"></div>
+						<div class="currency-text-container"><p>Alchemy Orb<br>Transform a normal item to a rare rarity.</p></div>
+					</div>
+
+					<div class="currency-wrapper" id="chaos">
+						<div class="currency-img-container"><img src="./img/Chaos.png" style="display: block; margin-left:auto; margin-right: auto;"></div>
+						<div class="currency-text-container"><p>Chaos Orb<br>Rerolls the affixes of a rare item.</p></div>
+					</div>
+
+					<div class="currency-wrapper" id="regal">
+						<div class="currency-img-container"><img src="./img/Regal.png" style="display: block; margin-left:auto; margin-right: auto;"></div>
+						<div class="currency-text-container"><p>Regal Orb<br>Transforms a magic item to a rare rarity..</p></div>
+					</div>
+
+					<div class="currency-wrapper" id="exalted">
+						<div class="currency-img-container"><img src="./img/Exalted.png" style="display: block; margin-left:auto; margin-right: auto;"></div>
+						<div class="currency-text-container"><p>Exalted Orb<br>Adds an additional explicit mod to a rare item.</p></div>
+					</div>
+
+					<div class="currency-wrapper" id="divine">
+						<div class="currency-img-container"><img src="./img/Divine.png" style="display: block; margin-left:auto; margin-right: auto;"></div>
+						<div class="currency-text-container"><p>Divine Orb<br>Rerolls the numerical values of explicit mods.</p></div>
+					</div>
+
+					<div class="currency-wrapper" id="scour">
+						<div class="currency-img-container"><img src="./img/Scouring.png" style="display: block; margin-left:auto; margin-right: auto;"></div>
+						<div class="currency-text-container"><p>Orb of Scouring<br>Transforms a non-unique item to normal rarity.</p></div>
+					</div>
+
+					<div class="currency-wrapper" id="annul">
+						<div class="currency-img-container"><img src="./img/Annulment.png" style="display: block; margin-left:auto; margin-right: auto;"></div>
+						<div class="currency-text-container"><p>Orb of Annulment<br>Removes a random explicit mod.</p></div>
+					</div>
+
+					<div class="currency-wrapper" id="blacksmith">
+						<div class="currency-img-container"><img src="./img/Blacksmith.png" style="display: block; margin-left:auto; margin-right: auto;"></div>
+						<div class="currency-text-container"><p>Blacksmith Whetstone<br>Increases quality of weapons.</p></div>
+					</div>
+
+					<!--
+					<div class="currency-wrapper" id="">
+						<div class="currency-img-container"><img src="./img/.png" style="display: block; margin-left:auto; margin-right: auto;"></div>
+						<div class="currency-text-container"><p><br></p></div>
+					</div>
+					-->
+
+
+
+
+
+				</div>
+
+			</div>
+
+			<div class="display-wrapper">
+
+				<div class="item-display-wrapper">
+					<span class="item-display-name">
+					</span>
+				</div>
+
+
+
+			</div>
+
+		</div>
+
+	</div>
+
+</body>

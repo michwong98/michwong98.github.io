@@ -1,0 +1,157 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #000000;
+	font-family: Arial;
+	box-sizing: border-box;
+}
+
+.top-banner {
+	display: flex;
+	flex-direction: row;
+	background-color: #343536;
+	height: 8%;
+	width: auto;
+}
+
+.top-banner a {
+	padding-left: 2%;
+}
+
+body {
+	background: #000000;
+	color: #EFEFEF;
+}
+
+.main {
+	display: flex;
+	margin: auto;
+	height: 90%;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+.core-wrapper {
+	height: 90%;
+	width: 80%;
+}
+
+.crafting-wrapper {
+	//visibility: hidden;
+	border-radius: 5% 0px 0px 5%;
+	float:left;
+	height: 100%;
+	width: 60%;
+	background-color: #343536;
+}
+
+#new-item-selection {
+	padding: 2% 5% 2% 5%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 80%;
+	height: 3%;
+	margin: auto;
+
+}
+
+#new-item-selection>select {
+	width: 25%;
+}
+
+#new-item-selection>input {
+	width: 15%;
+}
+
+#new-item-selection>button {
+	width: 15%;
+}
+
+.currency-select-wrapper {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.currency-wrapper {
+	display: inline-block;
+	padding: 14px;
+	font-size: 11px;
+	width: 80px;
+	height: 130px;
+	align-items: center;
+	justify-content: center;
+	background-color: #454545;
+	border-color: #404040;
+	border-style: solid;
+}
+
+.currency-img-container {
+	display: block;
+	align-items: center;
+	justify-content: center;
+	padding-left:auto;
+	padding-right:auto;
+}
+
+.currency-img-container img{
+	height: 50px;
+	width: 50px;
+}
+
+.currency-text-container {
+	text-align: center;
+}
+
+.item-display-wrapper {
+	width: 180px;
+	display: block;
+	background-color: #000000;
+	border-width: 3px;
+	border-style: solid;
+	border-color: #af6025;
+
+}
+
+.item-display-name {
+	background-image: url("./src/ui/unique-name-middle");
+}
+
+.item-stats {
+	text-align: center;
+	font-size: 14px;
+}
+
+.item-stat {
+	color: gray;
+}
+
+.item-stat-mod {
+	color: #8888ff;
+}
+
+
+
+
+
+
+
+
+
+
+.display-wrapper {
+	//visibility: hidden;
+	border-radius: 0px 5% 5% 0px;
+	float:left;
+	height: 100%;
+	width: 40%;
+	background-color: gray;
+}
+
