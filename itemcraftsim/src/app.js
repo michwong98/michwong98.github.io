@@ -175,7 +175,6 @@ const implicits = [
 window.addEventListener("DOMContentLoaded", (evt) => {
 
 	implicits.forEach(function(currentImplicit) {
-		console.log(123);
 		const newNode = document.createElement("div");
 		newNode.className = "corrupt-implicit-affix";
 		newNode.innerHTML = currentImplicit.affix + "<br>";
@@ -185,6 +184,7 @@ window.addEventListener("DOMContentLoaded", (evt) => {
 	document.getElementById("button-reset").addEventListener("click", generateNew);
 	document.getElementById("Vaal").addEventListener("click", vaal);
 	document.getElementById("Divine").addEventListener("click", divine);
+	document.getElementById("Blessed").addEventListener("click", blessed);
 	document.getElementById("Armourer").addEventListener("click", armourer);
 
 	const helpModal = document.getElementById("help-modal");
@@ -228,7 +228,6 @@ function generateNew() {
 	document.getElementById("implicits").style.display = "none";
 
 	let currentImplicits = document.getElementById("implicits").getElementsByClassName("item-stat");
-	console.log(currentImplicits.length);
 	for (let i = currentImplicits.length - 1; i >= 0; i--) {
 		currentImplicits[i].remove();
 	}
@@ -287,7 +286,7 @@ function generateImplicit() {
 		return;
 	}
 	let num = Math.floor(Math.random() * implicits.length);
-	implicit = implicits[num];
+	let implicit = implicits[num];
 	let hasImplicit = true;
 	while (hasImplicit) {
 		hasImplicit = false;
@@ -311,8 +310,10 @@ function generateImplicit() {
 		const randomNum = Math.floor(Math.random() * implicit.values.length);
 		const value = implicit.values[randomNum];
 		newImplicit.value = value;
+		newImplicit.values = implicit.values.slice();
 	} else if (implicit.hasOwnProperty("range")) {
 		newImplicit.value = implicit.range[2]*Math.floor(Math.random() * (1+(implicit.range[1] - implicit.range[0])/implicit.range[2])) + implicit.range[0];
+		newImplicit.range = implicit.range.slice();
 	}
 	currentItem.implicits.push(newImplicit);
 	const implicitsDisplay = document.getElementById("implicits");
@@ -326,3 +327,35 @@ function generateImplicit() {
 	newImplicitStat.appendChild(document.createElement("br"));
 	document.getElementById("corruption-state").style.display = "block";
 }
+
+function blessed() {
+
+	if (currentItem.rare) {
+		return;
+	} else {
+		currentItem.implicits.forEach(function(implicit) {
+			if (implicit.hasOwnProperty("values")) {
+				implicit.value = implicit.values[Math.floor(Math.random() * implicit.values.length)];
+			} else if (implicit.hasOwnProperty("range")) {
+				implicit.value = implicit.range[2]*Math.floor(Math.random() * (1+(implicit.range[1] - implicit.range[0])/implicit.range[2])) + implicit.range[0];
+			}
+		});
+	}
+
+	const existingImplicits = document.getElementById("implicits").getElementsByClassName("item-stat");
+	for (let i = existingImplicits.length - 1; i >= 0; i--) {
+		existingImplicits[i].remove();
+	}
+
+	const implicitsDisplay = document.getElementById("implicits");
+	currentItem.implicits.forEach(function(implicit) {
+		const itemAffix = implicit.affix.slice();
+		const affixText = itemAffix.replace("#", implicit.value);
+		const newImplicitStat = document.createElement("span");
+		implicitsDisplay.appendChild(newImplicitStat);
+		newImplicitStat.className = "item-stat"
+		newImplicitStat.innerHTML = '<span class="stat-mod">' + affixText + '</span>';
+		newImplicitStat.appendChild(document.createElement("br"));
+	});
+
+} 
