@@ -32,8 +32,8 @@ body {
 }
 
 .core-wrapper {
-	height: 90%;
-	width: 70%;
+	height: 540px;
+	width: 1000px;
 }
 
 .crafting-wrapper {
@@ -50,13 +50,55 @@ body {
 
 }
 
+button {
+	border-radius: 5px;
+	border-color: #100f0e;
+	border-width: 2px;
+	font-weight: bold;
+	background-color: #333333;
+	color: #a38d6d;
+}
+
+.modal {
+	display:none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: #000000;
+	background-color: #00000080;
+}
+
+.modal-content {
+	text-align: left;
+	background-color: #100f0e;
+	color: #a38d6d;
+	padding: 10px;
+	margin: 10% auto;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #100f0e;
+	width: 60%;
+}
+
+.close-modal {
+	color: white;
+	font-weight: bold;
+	float: right;
+	font-size: 26px;
+	padding-right: 5px;
+	padding-top: 5px;
+}
+
 .currency-select-wrapper {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: center;
-	padding-top: 5%;
 	padding-left: 5%;
 	padding-right: 5%;
 }
@@ -116,6 +158,31 @@ body {
 	visibility: visible;
 }
 
+.potential-implicits {
+	display: block;
+	width: 60%;
+	margin-left:auto;
+	margin-right:auto;
+	justify-content: center;
+	align-items: center;
+	border-style: solid;
+	border-radius: 4px;
+	border-color: #af6125;
+	border-width: 1px;
+}
+
+.corrupt-implicit-affix {
+	color: #8888ff;
+	display: block;
+	text-align: center;
+	font-size: 12px;
+	padding: 0;
+	margin: 0;
+	border-top-style: solid;
+	border-color: #af6125;
+	border-width: 1px;
+}
+
 .display-wrapper {
 	float: left;
 	//visibility: hidden;
@@ -131,7 +198,7 @@ body {
 
 .item-display-wrapper {
 	width: 360px;
-	margin-top: 5%;
+	margin-top: 2%;
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
@@ -139,7 +206,6 @@ body {
 	border-width: 1px;
 	border-style: solid;
 	border-color: #af6025;
-
 }
 
 .item-display-name {
@@ -184,11 +250,11 @@ body {
 	text-align: center;
 	align-content: center;
 	justify-content: center;
-	font-size: 13px;
+	font-size: 12px;
 }
 
 .item-stat {
-	display: inline-block;
+	display: block;
 	color: gray;
 }
 
@@ -208,6 +274,20 @@ body {
 	background-image: url("./img/ui/unique-ui-separator.png")
 }
 
+.item-socket {
+	font-size: 30px;
+	font-weight: bold;
+	display: block;
+	position: absolute;
+	color: #ffffff;
+}
+
+.item-link {
+	display: block;
+	color: #797979;
+	position: absolute;
+
+}
 
 
 

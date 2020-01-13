@@ -1,0 +1,159 @@
+{
+	"affixes": [
+		{
+			"id": "_c00",
+			"affix": "Curse Enemies with Level # Despair on Hit",
+			"values": [
+				10,
+				12
+			]
+		},
+		{
+			"id": "_c01",
+			"affix": "Curse Enemies with Level # Elemental Weakness on Hit",
+			"values": [
+				10,
+				12
+			]
+		},
+		{
+			"id": "_c02",
+			"affix": "Curse Enemies with Level # Enfeeble on Hit",
+			"values": [
+				10,
+				12
+			]
+		},
+		{
+			"id": "_c03",
+			"affix": "Curse Enemies with Level # Temporal Chains on Hit",
+			"values": [
+				10,
+				12
+			]
+		},
+		{
+			"id": "_c04",
+			"affix": "Curse Enemies with Level # Vulnerability on Hit",
+			"values": [
+				10,
+				12
+			]
+		},
+		{
+			"id": "_c05",
+			"affix": "# to level of Sockted Gems",
+			"values": [
+				1
+			]
+		},
+		{
+			"id": "_c06",
+			"affix": "Attacks have +#% to Critical Strike Chance",
+			"range": [
+				0.5,
+				0.8,
+				0.1
+			]
+		},
+		{
+			"id": "_c07",
+			"affix": "#% increased Attack Speed",
+			"range": [
+				8,
+				10,
+				1
+			]
+		},
+		{
+			"id": "_c08",
+			"affix": "#% increased Cast Speed",
+			"range": [
+				8,
+				10,
+				1
+			]
+		},
+		{
+			"id": "_c09",
+			"affix": "Spells have +#% to Critical Strike Chance",
+			"range": [
+				0.5,
+				0.8,
+				0.1
+			]
+		},
+		{
+			"id": "_c10",
+			"affix": "+# to Maximum Frenzy Charges",
+			"values": [
+				1
+			]
+		},
+		{
+			"id": "_c11",
+			"affix": "+# to Level of Sockted Duration Gems",
+			"values": [
+				1
+			]
+		},
+		{
+			"id": "_c12",
+			"affix": "+# to Level of Sockted AoE Gems",
+			"values": [
+				1
+			]
+		},
+		{
+			"id": "_c13",
+			"affix": "+# to Level of Sockted Aura Gems",
+			"values": [
+				1
+			]
+		},
+		{
+			"id": "_c14",
+			"affix": "+# to Level of Sockted Curse Gems",
+			"values": [
+				1
+			]
+		},
+		{
+			"id": "_c15",
+			"affix": "+# to Level of Sockted Trap or Mine Gems",
+			"values": [
+				1
+			]
+		},
+		{
+			"id": "_c16",
+			"affix": "+# to Level of Sockted Warcry Gems",
+			"values": [
+				1
+			]
+		},
+		{
+			"id": "_c17",
+			"affix": "+# to Level of Sockted Projectile Gems",
+			"values": [
+				1
+			]
+		},
+		{
+			"id": "_c18",
+			"affix": "#% increased maximum Life",
+			"range": [
+				4,
+				6,
+				1]
+		},
+		{
+			"id": "_c19",
+			"affix": "#% increased maximum Energy Shield",
+			"range": [
+				4,
+				6,
+				1]
+		}
+	]
+}

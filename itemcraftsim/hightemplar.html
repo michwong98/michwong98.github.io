@@ -1,0 +1,126 @@
+<! doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Hands of the High Templar</title>
+	<script type="text/javascript" src="./src/app.js"></script>
+	<script type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="./src/hightemp.css"/>
+	<link rel="icon" type="image/png" href="./src/img/currency/Vaal.png">
+</head>
+
+
+<body>
+
+	<div class="top-banner">
+		<img src="./src/img/currency/Vaal.png" alt="image" height="100%" width="auto" padding="4px" style="margin-left: 2%;"/>
+		<a style="font-size: 6vh; margin-top: auto; margin-bottom: auto; width: 50%">Hands of the High Templar</a>
+	</div>
+
+	<div class="main">
+		
+		<div class="core-wrapper">
+
+			<div class="crafting-wrapper">
+
+				<div style="width:80%; display: block; margin-left: auto; margin-right: auto; padding-top: 2%; padding-bottom: 2%; text-align: center;">
+				<button id="button-reset" style="width: 40%; display: inline-block; margin: 10px;">Reset Crafting Base</button><button id="help" style="width: 40%; display: inline-block; margin: 10px;">Help</button>
+				<div id="help-modal" class="modal">
+						<div class="modal-content">
+							<span class="close-modal">&times</span>
+							<p>From the Wiki Article:<a style="display: block; margin: 3%; background-color: #222222; color: #a38d6d; padding: 8px; text-align: left;">Normally, corrupting an item makes it impossible to apply further currency to it, aside from changing sockets with the crafting bench. This item offers an exception to this rule, making it possible to corrupt it over and over again until the corruption outcome turns it into a rare item, at which point it loses the "Can have up to 5 Implicit Modifiers while Item has this Modifier" mod and therefore all accumulated, powerful corruption effects.</a></p>
+							<p>Vaal Orbs are a currency item that will corrupt an item, modifying it unpredictably. A result of the corruption is modifying the implicit modifier of the item. Normally corruptions render the item unable to be modified further by any other currency, however <a href="https://pathofexile.gamepedia.com/Hands_of_the_High_Templar" style="color: #af6025;">The Hands of the High Templar</a>
+							have a unique modifer which allows them to modified while corrupted.</p>
+							<p>Vaal Orbs can add additional implicit modifiers, but each usage has a chance to convert the unique item into a rare. This removes the unique modifier that allows it to be modified while corrupted. You will still be able to view the last state of the item before it turned into a rare.</p>
+							<p>Hover over the currency items to view descriptions.</p>
+						</div>
+				</div>
+				</div>
+				<div class="currency-select-wrapper">
+
+					<div class="currency-wrapper" id="Vaal">
+						<div class="currency-img-container">
+							<img src="./src/img/currency/Vaal.png">
+							<span class="tooltiptext">Vaal Orb: Corrupts an item, modifying it unpredictably.</span>
+						</div>
+					</div>
+
+					<div class="currency-wrapper" id="Divine">
+						<div class="currency-img-container">
+							<img src="./src/img/currency/Divine.png">
+							<span class="tooltiptext">Divine Orb: Randomises the numeric values of the random modifiers on an item.</span>
+						</div>
+					</div>
+					<!--
+					<div class="currency-wrapper" id="Jeweller">
+						<div class="currency-img-container">
+							<img src="./src/img/currency/Jeweller.png">
+							<span class="tooltiptext">Jeweller's Orb: Reforges the number of sockets on an item.</span>
+						</div>
+					</div>
+
+					<div class="currency-wrapper" id="Fusing">
+						<div class="currency-img-container">
+							<img src="./src/img/currency/Fusing.png">
+							<span class="tooltiptext">Orb of Fusing: Reforges the links between sockets on an item.</span>
+						</div>
+					</div>
+					-->
+					<div class="currency-wrapper" id="Armourer">
+						<div class="currency-img-container">
+							<img src="./src/img/currency/Armourer.png">
+							<span class="tooltiptext">Armourer's Scrap: Improves the quality of an armour.</span>
+						</div>
+					</div>
+
+				</div>
+				<br>
+				<div class="potential-implicits"><a style="text-align: center; display:block; width: 100%; color: #af6125; font-weight: bold;">Potential Corrupted Implicits</a>
+				</div>
+
+
+
+			</div>
+
+			<div class="display-wrapper">
+
+				<div class="item-display-wrapper">
+					<span class="item-display-left"></span><span class="item-display-name">Hands of the High Templar<br>Crusader Gloves</span><span class="item-display-right"></span>
+					<span class="item-stats">
+						<span class="item-stat" id="quality-wrapper" style="display:block;">Quality: +<span class="stat-mod" id="qual">20</span>%<br></span>
+						<span class="item-stat">Armour: <span class="stat-mod" id="ar">387</span></span>
+						<span class="item-stat">Energy Shield: <span class="stat-mod" id="es">76</span></span>
+						<span class="item-separator"></span>
+						<span class="item-stat">Requires Level: <span class="stat-mod" style="color:white;">66</span>, <span class="stat-mod" style="color:white;">51</span> Str, <span class="stat-mod" style="color:white;">51</span> Int</span>
+						<div id="implicits" style="display:none;"><span class="item-separator"></span></div>
+						<span class="item-separator"></span>
+						<span class="item-stat"><span class="stat-mod">Can be modified while Corrupted</span></span>
+						<span class="item-stat"><span class="stat-mod">Can have up to 5 Implicit Modifiers while Item has this Modifier</span></span>
+						<span class="item-stat"><span class="stat-mod"><a id="stat-ar-es">156</a>% increased Armour and Energy Shield</span></span>
+						<span class="item-stat"><span class="stat-mod"><a id="stat-maximum-life">12</a>% increased maximum life</span></span>
+						<span class="item-stat"><span class="stat-mod">+<a id="stat-fire-light-res">27</a>% to Fire and Lightning Resistances</span></span>
+						<span class="item-stat" style="color:red; display: block;" id="corruption-state">Corrupted</span>
+						<span class="item-separator"></span>
+						<span class="item-stat" style="color: #af6025; font-style: italic;">The laws of the faith do not apply to its leader.</span>
+					</span>
+					<div style="display: block; background-image: url('./src/img/items/Hands of the High Templar.png'); height: 156px; width: 156px; margin-right: auto; margin-left: auto;">
+					<!--
+						<div class="item-socket" style="margin-left: 10%;margin-top: 10%;">O</div>
+						<div class="item-link">=</div>
+						<div class="item-socket" style="margin-left: 30%;margin-top: 10%;">O</div>
+						<div class="item-link">=</div>
+						<div class="item-socket" style="margin-left: 10%;margin-top: 30%;">O</div>
+						<div class="item-link">=</div>
+						<div class="item-socket" style="margin-left: 30%;margin-top: 30%;">O</div>
+					-->
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</body>
