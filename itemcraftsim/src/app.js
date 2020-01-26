@@ -1,9 +1,13 @@
+//TODO: Sockets and Links
+
+//Default Stats.
 const baseStats = {
 	"ar-es": [150, 200],
 	"maximum-life": [7, 12],
 	"fire-light-res": [20,30]
 };
 
+//Properities and State of the current item.
 const currentItem = {
 	"corrupted": false,
 	"quality": 0,
@@ -14,6 +18,7 @@ const currentItem = {
 	"rare": false
 };
 
+//Pool of Possible Implicit Rolls, default corrupted implicits for gloves.
 const implicits = [
 	{
 		"id": "_c00",
@@ -174,6 +179,7 @@ const implicits = [
 
 window.addEventListener("DOMContentLoaded", (evt) => {
 
+	//Displays all possible implicit rolls.
 	implicits.forEach(function(currentImplicit) {
 		const newNode = document.createElement("div");
 		newNode.className = "corrupt-implicit-affix";
@@ -181,12 +187,16 @@ window.addEventListener("DOMContentLoaded", (evt) => {
 		document.getElementsByClassName("potential-implicits")[0].appendChild(newNode);
 	});
 
+	//Reset button, resets item properities to default.
 	document.getElementById("button-reset").addEventListener("click", generateNew);
+
+	//Adds onclick functions for each currency item.
 	document.getElementById("Vaal").addEventListener("click", vaal);
 	document.getElementById("Divine").addEventListener("click", divine);
 	document.getElementById("Blessed").addEventListener("click", blessed);
 	document.getElementById("Armourer").addEventListener("click", armourer);
 
+	//Modal Button, changes visibility.
 	const helpModal = document.getElementById("help-modal");
 	document.getElementById("help").addEventListener("click", function() {
 		helpModal.style.display = "block";
@@ -200,33 +210,39 @@ window.addEventListener("DOMContentLoaded", (evt) => {
 		}
 	});
 
+	//Initializes the first crafting base.
 	generateNew();
 });
 
+//Reset function. Removes modifications and reverts to default values.
 function generateNew() {
 
+	//Resets Values and State to Default.
 	currentItem["corrupted"] = false;
 	currentItem["quality"] = 0;
 	currentItem["ar-es"] = Math.floor( Math.random() * 51 ) + 150;
 	currentItem["maximum-life"] = Math.floor( Math.random() * 6 )  + 7;
 	currentItem["fire-light-res"] = Math.floor( Math.random() * 11 ) + 20;
 	currentItem["implicits"] = [];
-	currentItem["rare"] = false;
+	currentItem["rare"] = false; //Rare item quality prevents further modifying.
 
+	//Filter changes when item is set to rare quality.
 	document.getElementsByClassName("item-display-wrapper")[0].style.filter = "brightness(100%)";
 
+	//Resets quality and recalculates ar/es values.
 	document.getElementById("qual").innerHTML = 0;
 	document.getElementById("quality-wrapper").style.display = "none";
 	document.getElementById("ar").innerHTML = Math.floor(121 * (1 + currentItem["ar-es"]/100));
 	document.getElementById("es").innerHTML = Math.floor(24 * (1 + currentItem["ar-es"]/100));
-
 	document.getElementById("stat-ar-es").innerHTML = currentItem["ar-es"];
 	document.getElementById("stat-maximum-life").innerHTML = currentItem["maximum-life"];
 	document.getElementById("stat-fire-light-res").innerHTML = currentItem["fire-light-res"];
 
+	//When corrupted state is removed, hide the corruption text line.
 	document.getElementById("corruption-state").style.display = "none";
 	document.getElementById("implicits").style.display = "none";
 
+	//Deletes existing implicits from display.
 	let currentImplicits = document.getElementById("implicits").getElementsByClassName("item-stat");
 	for (let i = currentImplicits.length - 1; i >= 0; i--) {
 		currentImplicits[i].remove();
@@ -234,18 +250,21 @@ function generateNew() {
 
 }
 
+//Adds quality, affects ar/es values.
 function armourer() {
 	if (currentItem.rare) {
 		return;
-	} else if (currentItem.quality < 20) {
+	} else if (currentItem.quality < 20) { //Maximum quality is 20%.
 		currentItem.quality++;
 		document.getElementById("qual").innerHTML = currentItem.quality;
 		document.getElementById("quality-wrapper").style.display = "block";
+		//Quality increases the ar/es values.
 		document.getElementById("ar").innerHTML = Math.floor(121 * (1 + (currentItem["ar-es"] + currentItem.quality)/100));
 		document.getElementById("es").innerHTML = Math.floor(24 * (1 + (currentItem["ar-es"] + currentItem.quality)/100));
 	}
 }
 
+//Generates new random values for explicit modiifiers.
 function divine() {
 
 	if (currentItem.rare) {
@@ -263,6 +282,9 @@ function divine() {
 
 }
 
+//Randomly modifies:
+//0 Sets item rarity to rare, disabling further modifications
+//1 Generates a new implicit modifier
 function vaal() {
 
 	if (currentItem.rare) {
@@ -272,6 +294,7 @@ function vaal() {
 		switch(random) {
 			case 0: 
 				currentItem.rare = true;
+				//Filter changes to indiciate rare status.
 				document.getElementsByClassName("item-display-wrapper")[0].style.filter = "brightness(70%)";
 				return;
 			case 1:
@@ -281,6 +304,8 @@ function vaal() {
 	}
 }
 
+//Function called by Vaal, generates a random implicit modifier from implicit pool.
+//TODO: replace fifth implicit on maximum implicit count
 function generateImplicit() {
 	if (currentItem.implicits.length >= 5) {
 		return;
@@ -288,7 +313,7 @@ function generateImplicit() {
 	let num = Math.floor(Math.random() * implicits.length);
 	let implicit = implicits[num];
 	let hasImplicit = true;
-	while (hasImplicit) {
+	while (hasImplicit) { //Check if implicit already exists on the current item.
 		hasImplicit = false;
 		for (let i = 0; i < currentItem.implicits.length; i++) {
 			const currentImplicit = currentItem.implicits[i];
@@ -297,12 +322,12 @@ function generateImplicit() {
 				break;
 			}
 		}
-		if (hasImplicit) {
+		if (hasImplicit) { //Select a random corruption implicit.
 			num = Math.floor(Math.random() * implicits.length);
 			implicit = implicits[num];
 		}
 	}
-	const newImplicit = {
+	const newImplicit = { //Copies the id and despcritor of the affix.
 		"id": implicit.id.slice(),
 		"affix": implicit.affix.slice()
 	}
@@ -328,6 +353,7 @@ function generateImplicit() {
 	document.getElementById("corruption-state").style.display = "block";
 }
 
+//Generates new random values for implicit modiifiers.
 function blessed() {
 
 	if (currentItem.rare) {
@@ -342,11 +368,13 @@ function blessed() {
 		});
 	}
 
+	//Removes implicits from display.
 	const existingImplicits = document.getElementById("implicits").getElementsByClassName("item-stat");
 	for (let i = existingImplicits.length - 1; i >= 0; i--) {
 		existingImplicits[i].remove();
 	}
 
+	//Adds implicits to item display.
 	const implicitsDisplay = document.getElementById("implicits");
 	currentItem.implicits.forEach(function(implicit) {
 		const itemAffix = implicit.affix.slice();
