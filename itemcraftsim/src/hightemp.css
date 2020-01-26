@@ -1,7 +1,6 @@
 body {
 	margin: 0;
 	padding: 0;
-	background-color: #000000;
 	font-family: Arial;
 	box-sizing: border-box;
 	background: #000000;
@@ -11,7 +10,7 @@ body {
 .top-banner {
 	display: flex;
 	flex-direction: row;
-	background-color: #100f0e;
+	background: #100f0e;
 	height: 8%;
 	width: auto;
 }
@@ -25,7 +24,7 @@ body {
 	margin: auto;
 	height: 90%;
 	width: 100%;
-	background-image: url("./img/ui/conquerorsoftheatlas-bg.jpg");
+	background: url("./img/ui/conquerorsoftheatlas-bg.jpg");
 	background-size: 100% auto;
 	justify-content: center;
 	align-items: center;
@@ -39,23 +38,20 @@ body {
 .crafting-wrapper {
 	float:left;
 	//visibility: hidden;
-	border-radius: 5% 0px 0px 5%;
 	float:left;
 	height: 100%;
 	width: 54.5%;
-	background-color: #100f0e;
-	border-color: #af6125;
-	border-style: solid;
-	border-width: 1px;
+	background: #100f0e;
+	border: 1px solid #af6125;
+	border-radius: 5% 0px 0px 5%;
 
 }
 
 button {
+	border: 2px solid #100f0e;
 	border-radius: 5px;
-	border-color: #100f0e;
-	border-width: 2px;
 	font-weight: bold;
-	background-color: #333333;
+	background: #333333;
 	color: #a38d6d;
 }
 
@@ -68,19 +64,16 @@ button {
 	width: 100%;
 	height: 100%;
 	overflow: auto;
-	background-color: #000000;
-	background-color: #00000080;
+	background: #00000080;
 }
 
 .modal-content {
 	text-align: left;
-	background-color: #100f0e;
-	color: #a38d6d;
 	padding: 10px;
 	margin: 10% auto;
-	border-width: 2px;
-	border-style: solid;
-	border-color: #100f0e;
+	background: #100f0e;
+	color: #a38d6d;
+	border: 2px solid #100f0e;
 	width: 60%;
 }
 
@@ -112,9 +105,8 @@ button {
 	height: 45px;
 	align-items: center;
 	justify-content: center;
-	background-color: #454545;
-	border-color: #404040;
-	border-style: solid;
+	background: #454545;
+	border: 2px solid #404040;
 }
 
 .currency-img-container {
@@ -141,13 +133,12 @@ button {
 
 .currency-wrapper .tooltiptext {
 	visibility: hidden;
-	background-color: black;
+	background: black;
 	color: #a38d6d;
 	width: 80px;
 	text-align: center;
 	border-radius: 6px;
 	padding: 5px;
-
 	position: absolute;
 	z-index: 1;
 }
@@ -165,10 +156,8 @@ button {
 	margin-right:auto;
 	justify-content: center;
 	align-items: center;
-	border-style: solid;
+	border: 1px solid #af6125;
 	border-radius: 4px;
-	border-color: #af6125;
-	border-width: 1px;
 }
 
 .corrupt-implicit-affix {
@@ -178,9 +167,7 @@ button {
 	font-size: 12px;
 	padding: 0;
 	margin: 0;
-	border-top-style: solid;
-	border-color: #af6125;
-	border-width: 1px;
+	border-top: 1px solid #af6125;
 }
 
 .display-wrapper {
@@ -190,7 +177,7 @@ button {
 	float:left;
 	height: 100%;
 	width: 44.5%;
-	background-color: #100f0e;
+	background: #100f0e;
 	border-color: #af6125;
 	border-style: solid solid solid none;
 	border-width: 1px;
@@ -202,10 +189,8 @@ button {
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
-	background-color: #000000;
-	border-width: 1px;
-	border-style: solid;
-	border-color: #af6025;
+	background: #000000;
+	border: 1px solid #af6025;
 }
 
 .item-display-name {
@@ -219,9 +204,8 @@ button {
 	width: 272px;
 	text-align: center;
 	color: #af6025;
-	background-image: url("./img/ui/unique-name-middle.png");
+	background: url("./img/ui/unique-name-middle.png") repeat-x;
 	background-size: auto 100%;
-	background-repeat: repeat-x;
 	vertical-align: top;
 }
 
@@ -237,11 +221,11 @@ button {
 }
 
 .item-display-left {
-	background-image: url("./img/ui/unique-name-left.png");
+	background: url("./img/ui/unique-name-left.png");
 }
 
 .item-display-right {
-	background-image: url("./img/ui/unique-name-right.png");
+	background: url("./img/ui/unique-name-right.png");
 }
 
 .item-stats {
@@ -268,10 +252,9 @@ button {
 	content: "this";
 	width: 100%;
 	height: 17px;
-	background-position: center;
-	background-repeat: no-repeat;
+
+	background: url("./img/ui/unique-ui-separator.png") no-repeat center;
 	background-size: initial;
-	background-image: url("./img/ui/unique-ui-separator.png")
 }
 
 .item-socket {
@@ -288,6 +271,3 @@ button {
 	position: absolute;
 
 }
-
-
-
