@@ -305,7 +305,6 @@ function vaal() {
 }
 
 //Function called by Vaal, generates a random implicit modifier from implicit pool.
-//TODO: replace fifth implicit on maximum implicit count
 function generateImplicit() {
 	if (currentItem.implicits.length >= 5) {
 		return;
@@ -340,17 +339,28 @@ function generateImplicit() {
 		newImplicit.value = implicit.range[2]*Math.floor(Math.random() * (1+(implicit.range[1] - implicit.range[0])/implicit.range[2])) + implicit.range[0];
 		newImplicit.range = implicit.range.slice();
 	}
-	currentItem.implicits.push(newImplicit);
-	const implicitsDisplay = document.getElementById("implicits");
-	implicitsDisplay.style.display = "block";
-	let itemAffix = newImplicit.affix.slice();
-	let affixText = itemAffix.replace("#", newImplicit.value);
-	const newImplicitStat = document.createElement("span");
-	implicitsDisplay.appendChild(newImplicitStat);
-	newImplicitStat.className = "item-stat"
-	newImplicitStat.innerHTML = '<span class="stat-mod">' + affixText + '</span>';
-	newImplicitStat.appendChild(document.createElement("br"));
-	document.getElementById("corruption-state").style.display = "block";
+	if (currentItem.implicits.length < 5) {
+
+		currentItem.implicits.push(newImplicit);
+		const implicitsDisplay = document.getElementById("implicits");
+		implicitsDisplay.style.display = "block";
+		let itemAffix = newImplicit.affix.slice();
+		let affixText = itemAffix.replace("#", newImplicit.value);
+		const newImplicitStat = document.createElement("span");
+		implicitsDisplay.appendChild(newImplicitStat);
+		newImplicitStat.className = "item-stat"
+		newImplicitStat.innerHTML = '<span class="stat-mod">' + affixText + '</span>';
+		newImplicitStat.appendChild(document.createElement("br"));
+		document.getElementById("corruption-state").style.display = "block";
+
+	} else {
+		currentItem.implicits[4] = newImplicit;
+		const implicitsDisplay = document.getElementById("implicits");
+		const implicitsDisplayed = implicitsDisplay.getElementsByClassName("item-stat");
+		implicitsDisplayed[4].innerHTML = '<span class="stat-mod">' + newImplicit.affix.slice().replace("#", newImplicit.value) + '</span>';
+		implicitsDisplayed[4].appendChild(document.createElement("br"));
+
+	}
 }
 
 //Generates new random values for implicit modiifiers.
